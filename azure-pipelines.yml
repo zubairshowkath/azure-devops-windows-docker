@@ -12,5 +12,5 @@ pool:
 jobs:
 - job: Windows
   steps:
-  - script: echo Hello, world!
+  - powershell: echo Hello, world!
     displayName: 'Run a one-line script'
