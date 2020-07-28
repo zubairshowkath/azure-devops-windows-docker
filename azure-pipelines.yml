@@ -6,11 +6,11 @@
 trigger:
 - master
 
+pool:
+  vmImage: 'ubuntu-latest'
+
 jobs:
 - job: Windows
-  pool:
-    vmImage: 'ubuntu-latest'
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
